@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Book Dialog Styles */
+#book-dialog {
+  padding: 20px;
+  border: 2px solid #888;
+  border-radius: 8px;
+}
+
+/* Book Form Styles */
+#book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+#book-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+#book-form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#book-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#book-form button:hover {
+  background-color: #0056b3;
+}
+
+/* General Button Styles */
+button {
+  all: unset; /* removes all default styles */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* New Book Button Styles */
+button.new-book {
+  border: 2px solid #007bff;
+  background-color: white;
+  color: #007bff;
+}
+
+button.new-book:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}

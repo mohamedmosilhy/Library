@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Library</title>
+        <link rel="stylesheet" href="./style.css">
+        <script defer src="./script.js"></script>
+    </head>
+
+    <body>
+        <button class="new-book">New Book</button>
+
+        <dialog id="book-dialog">
+            <form id="book-form" method="dialog">
+                <label>Title: <input type="text" name="title" required></label><br>
+                <label>Author: <input type="text" name="author" required></label><br>
+                <label>Pages: <input type="number" name="pages" required></label><br>
+                <button type="submit" class="add-book">Add Book</button>
+            </form>
+        </dialog>
+
+        <table id="book-table" border="1">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>ID</th>
+                    <th>Read Status</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+
+</html>
