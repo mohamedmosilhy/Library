@@ -1,16 +1,17 @@
 const myLibrary = [];
 
-function Book(title, author, pages, id, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.id = id;
-  this.read = read || false; // Default to false if not provided
+class Book {
+  constructor(title, author, pages, id, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.id = id;
+    this.read = read || false; // Default to false if not provided
+  }
+  toggleReadStatus() {
+    this.read = !this.read;
+  }
 }
-
-Book.prototype.toggleReadStatus = function () {
-  this.read = !this.read;
-};
 
 function addBookToLibrary(title, author, pages, read) {
   myLibrary.push(new Book(title, author, pages, crypto.randomUUID(), read));
